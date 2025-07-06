@@ -3,6 +3,8 @@ try:
     print(number_input)
 except ValueError:
     print("Code Completed!")
+finally:
+    print("Good bye")
 
 
 
