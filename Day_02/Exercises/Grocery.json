@@ -1,0 +1,14 @@
+[
+ {
+  "Name": "Absolute",
+  "Description": "Drinking Water",
+  "Size (mL)": 1500,
+  "Cost (PhP)": 56
+ },
+ {
+  "Name": "Coke",
+  "Description": "Soda",
+  "Size (mL)": 500,
+  "Cost (PhP)": 35
+ }
+]

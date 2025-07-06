@@ -1,19 +1,19 @@
 from random import choice
 from tokenize import endpats
 
-ranks = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
-suits = ["Hearts","Diamonds","Spades","Clubs"]
-
-deck = [
-    (rank+suit)
-    for rank in ranks
-    for suit in suits
-]
 
 # Return a list of 52 strings containing a standard deck
 def create_deck() -> list[str]:
-     return deck
-# print(deck)
+    ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+    suits = ["Hearts", "Diamonds", "Spades", "Clubs"]
+
+    deck = [
+        (rank + suit)
+        for rank in ranks
+        for suit in suits
+    ]
+    return (deck)
+# print(create_deck())
 
 # Remove count return count cards from the start from deck
 def draw_top(deck: list[str], count: int=1)-> list[str]:
@@ -39,5 +39,8 @@ def draw_random(deck: list[str], count: int=1) -> list[str]:
 
 # Print all cards in deck
 def show(deck):
-    return (deck)
-print(deck)
+    for card in deck:
+        print(card)
+
+deck = create_deck()
+show(deck)
